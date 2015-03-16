@@ -36,7 +36,7 @@ var schema = Joi.object().options({ abortEarly: false }).keys({
 
 * password - requires a string of minimum 8 characters
 
-* password_confirmation - this must match the named key 'password' which it refers to using **references**, namely ```Joi.ref('password'). This generates a reference to the value of the named key, in this case 'Password'
+* password_confirmation - this must match the named key 'password' which it refers to using **references**, namely ```Joi.ref('password')```. This generates a reference to the value of the named key, in this case 'Password'
 
 * first name - requires a string
 
