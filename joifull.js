@@ -12,11 +12,30 @@ var schema = Joi.object().options({ abortEarly: false }).keys({
 
 
 var data = {
-    email: 'not_a_valid_email_to_show_custom_label',
+    email: 'beetle_juice_loves_stripes',
     password: 'abcd1234',
-    password_confirmation: 'abc1',
+    password_confirmation: 'dfghsfyg',
     first_name: 'Joe',
     last_name: 'Doe'
 };
 
 Joi.assert(data, schema);
+
+
+// var Joi = require('joi');
+
+
+// var schema2 = {
+//     type: Joi.string().required(),
+//     subtype: Joi.alternatives()
+//         .when('type', {is: 'video', then: Joi.valid('mp4', 'wav')})
+//         .when('type', {is: 'audio', then: Joi.valid('mp3')})
+//         .when('type', {is: 'image', then: Joi.valid('jpg', 'png')})
+//         .when('type', {is: 'pdf'  , then: Joi.valid('document')})
+// };
+
+
+// Joi.assert({ type: 'video', subtype: 'mp4' }, schema2); // Pass
+// Joi.assert({ type: 'video', subtype: 'wav' }, schema2); // Pass
+// Joi.assert({ type: 'pdf', subtype: 'document' }, schema2); // Fail
+// Joi.assert({ type: 'audio', subtype: 'mp4' }, schema2); // Fail
