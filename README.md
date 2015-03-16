@@ -95,7 +95,7 @@ We run this in our command line using the following command:
 
 ### **Please note** : 
 
-Using the ```Joi.assert(data, schema)``` assertion means that if you have more than one schema object in your file, Joi will run until an assertion fails.
+Using the ```Joi.assert(data, schema)``` assertion means that if you have more than one schema object in your file, Joi will run until an assertion fails. When the assertion fails it will terminate our terminal.
 
 If you would like to validate various data against multiple scehemas, which all live in one file, you want to avoid using the assert method directly and explore other options.
 
