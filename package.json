@@ -1,0 +1,23 @@
+{
+  "name": "joi-validation.github.io",
+  "version": "1.0.0",
+  "description": "This is our github repo. Role group joi validation",
+  "main": "hellovalidate.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beechware/joi-validation.github.io.git"
+  },
+  "author": "david beech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beechware/joi-validation.github.io/issues"
+  },
+  "homepage": "https://github.com/beechware/joi-validation.github.io",
+  "dependencies": {
+    "hapi": "^8.4.0",
+    "joi": "^6.0.8"
+  }
+}
